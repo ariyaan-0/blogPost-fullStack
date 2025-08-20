@@ -36,7 +36,7 @@ These models are linked through relational mappings to enable authentication, co
 
 ---
 
-[!dataModel](./backend/diagrams/dataModel.png)
+![dataModel](./backend/diagrams/dataModel.png)
 
 ## 👤 Users
 **Fields:**  
