@@ -96,7 +96,7 @@ These models are linked through relational mappings to enable authentication, co
 
 ---
 
-###S 🔗 How They Work Together
+### 🔗 How They Work Together
 - A **User** signs up and creates **Blog Posts**.  
 - Other **Users** (or the same author) can add **Comments** to those posts.  
 - Posts and comments both store references to the **User** who created them.  
