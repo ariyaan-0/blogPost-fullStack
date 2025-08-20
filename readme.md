@@ -2,6 +2,8 @@
 
 A full-featured blog platform built with React, Redux, and TailwindCSS on the frontend, and Express.js with MongoDB on the backend. Cloudinary is integrated for media storage, enabling users to upload and manage images. The platform supports creating, editing, and viewing blog posts, along with authentication features such as signup and login.
 
+---
+
 ## Features
 
 - ✍️ **Create new blog posts** with rich text and image uploads (via Cloudinary)  
@@ -12,6 +14,8 @@ A full-featured blog platform built with React, Redux, and TailwindCSS on the fr
 - 📷 **Image management** with Cloudinary integration  
 - 📱 **Responsive UI** built with TailwindCSS for seamless use across devices  
 - ⚡ **State management** with Redux for efficient data handling  
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -29,14 +33,18 @@ A full-featured blog platform built with React, Redux, and TailwindCSS on the fr
 - 🔐 JSON Web Tokens (JWT) for authentication  
 - 🛡️ bcrypt.js for password hashing  
 
+---
+
 # 📊 Data Modeling Overview
 
 The blog platform consists of three core entities: **Users**, **Blog Posts**, and **Comments**.  
 These models are linked through relational mappings to enable authentication, content creation, and interaction within the platform.
 
----
+
 
 ![dataModel](./backend/diagrams/dataModel.png)
+
+---
 
 ## 👤 Users
 **Fields:**  
