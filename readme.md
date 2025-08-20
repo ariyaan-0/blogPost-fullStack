@@ -54,12 +54,7 @@ These models are linked through relational mappings to enable authentication, co
 - `password` – Securely hashed password  
 - `refreshToken` – Token for session management (JWT refresh mechanism)  
 - `created_at` – Account creation timestamp  
-
-**Purpose:**  
-- Stores authentication and profile details of users.  
-- Handles secure login/signup with password hashing (e.g., bcrypt.js).  
-- Enables persistent sessions with refresh tokens.  
-
+ 
 **Relationships:**  
 - One **User** → Many **Blog Posts**  
 - One **User** → Many **Comments**
@@ -78,12 +73,7 @@ These models are linked through relational mappings to enable authentication, co
 - `status` – Draft, Published, or Archived  
 - `created_at` – Creation timestamp  
 - `updated_at` – Last update timestamp  
-- `image_url` – Cloudinary image reference  
-
-**Purpose:**  
-- Represents the main blog content authored by users.  
-- Supports drafts, publishing, and archival workflow.  
-- Integrates with **Cloudinary** for media/image storage.  
+- `image_url` – Cloudinary image reference   
 
 **Relationships:**  
 - One **Blog Post** → Belongs to one **User**  
@@ -98,11 +88,7 @@ These models are linked through relational mappings to enable authentication, co
 - `userID` – References the author (User)  
 - `content` – Comment text  
 - `created_at` – Creation timestamp  
-- `updated_at` – Last update timestamp  
-
-**Purpose:**  
-- Stores user-generated comments for discussion and feedback.  
-- Supports creation and updates (editable comments).  
+- `updated_at` – Last update timestamp   
 
 **Relationships:**  
 - One **Comment** → Belongs to one **User**  
@@ -110,12 +96,9 @@ These models are linked through relational mappings to enable authentication, co
 
 ---
 
-## 🔗 How They Work Together
+###S 🔗 How They Work Together
 - A **User** signs up and creates **Blog Posts**.  
 - Other **Users** (or the same author) can add **Comments** to those posts.  
 - Posts and comments both store references to the **User** who created them.  
 
-With this setup:  
-- You can fetch all posts by a user.  
-- You can fetch all comments on a post.  
-- You can track post authorship and comment ownership.  
+ 
